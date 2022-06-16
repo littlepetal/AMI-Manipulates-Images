@@ -1,0 +1,10 @@
+1 Commandline arguments are parsed using getopt. Indications of which imgage manipulations
+    are required and their associated arguments are initialised here and used later. Invalid
+    arguments are also handled here.
+2 The remaining commandline arguments that provide the annotation, input filename, output
+    filename and boundaries are initialised with the help of optind.
+3 A series of if statements apply the desired manipulations to the input image in the order 
+    specified in the help prompt, using custom functions. Those functions have the address of 
+    the input image as part of their input.
+4 After all the required manipulations have been applied, the input image is written to the
+    output image. The input image file is freed and the program exits successfully.
